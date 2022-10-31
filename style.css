@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(
+      to left,
+      rgba(224, 232, 255, 0.7),
+      rgba(224, 232, 255, 0.7)
+    ),
+    url(images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  background: #fff;
+  margin: 10rem auto;
+  width: 45rem;
+  overflow: hidden;
+  border-radius: 15px;
+  justify-content: center;
+  height: 65rem;
+}
+.order-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.8rem 1rem;
+  gap: 3rem;
+}
+.order-text:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.h2 {
+  text-align: center;
+}
+h2 {
+  font-size: 2.5rem;
+  color: rgb(31, 47, 86);
+  margin-bottom: 1.4rem;
+}
+.p-order {
+  padding: 0 4rem;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  color: rgba(31, 47, 86, 0.47);
+}
+.plan {
+  display: flex;
+  padding: 1.4rem;
+  width: 70%;
+  margin-bottom: 1.5rem;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.9rem;
+  background: rgba(224, 232, 255, 0.578);
+}
+
+.annual {
+  font-size: 1.3rem;
+  margin-right: 4rem;
+  color: rgba(31, 47, 86, 0.779);
+}
+.annual > h4 {
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.p-plan {
+  color: rgba(31, 47, 86, 0.492);
+  font-size: 1.3rem;
+}
+.plan > a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: rgba(31, 47, 86, 0.813);
+  font-weight: 800;
+  border-bottom: 1px solid rgba(31, 47, 86);
+  transition: all 0.5s ease;
+}
+.plan > a:hover {
+  color: rgba(31, 47, 86, 0.585);
+}
+.payment {
+  text-decoration: none;
+  background: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 94%);
+  padding: 1.4rem 0;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.6rem;
+  width: 80%;
+  box-shadow: 0 1.2rem 3rem hsla(245, 75%, 52%, 0.416);
+}
+.payment:hover {
+  background: hsla(245, 75%, 52%, 0.641);
+  transition: all 0.5s ease;
+}
+.cancel {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: rgba(31, 47, 86, 0.664);
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+.cancel:hover {
+  color: rgba(31, 47, 86);
+}
+@media screen and (max-width: 375px) {
+  .container {
+    height: fit-content;
+    width: 30rem;
+    margin: 2rem auto;
+  }
+  .image {
+    height: 27%;
+  }
+  .image > img {
+    width: 100%;
+  }
+  .order-text {
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+  .h2 {
+    font-size: 1.5rem;
+  }
+  .p-order {
+    padding: 0 2.5rem;
+  }
+  .plan {
+    width: 90%;
+    background: #fff;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+  .plan > img {
+    margin-right: 0;
+  }
+  .annual {
+    margin-right: 2rem;
+  }
+  .p-plan {
+    font-size: 1rem;
+  }
+  .annual > h4 {
+    font-size: 1.1rem;
+  }
+  .plan > a {
+    font-weight: 0.9rem;
+  }
+  .payment {
+    padding: 1.2rem 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}
